@@ -2,7 +2,7 @@ import kind from '@enact/core/kind';
 import Panels from '@enact/sandstone/Panels';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 
-import MainPanel from '../views/MainPanel';
+import MainPanel from '../Views/MainPanel';
 
 import css from './App.module.less';
 
