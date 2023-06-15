@@ -13,7 +13,10 @@
 		"lint": "enact lint .",
 		"license": "enact license",
 		"test": "enact test",
-		"test-watch": "enact test --watch"
+		"test-watch": "enact test --watch",
+    "pack-tv": "enact pack -l tv",
+		"launch-simulator": "ares-launch -s 23 ./dist",
+		"simulate": "yarn pack-tv && yarn launch-simulator"
 	},
 	"license": "UNLICENSED",
 	"private": true,
@@ -39,9 +42,13 @@
 		"@types/react": "^18.0.27",
 		"@types/react-dom": "^18.0.10",
 		"ilib": "^14.15.1",
+		"localforage": "^1.10.0",
+		"match-sorter": "^6.3.1",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.13.0",
+		"sort-by": "^1.2.0",
 		"typescript": "^4.9.5",
 		"web-vitals": "^3.1.1"
 	},
