@@ -2,6 +2,7 @@ import {createRoot, hydrateRoot} from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './Assets/global.css'
 
 const appElement = (<App />);
 
