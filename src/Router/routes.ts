@@ -5,6 +5,7 @@ import NotFoundView from "../Views/NotFoundView";
 import LoginView from "../Views/LoginView";
 import ROUTE_PATH from '../Constantes/routes'
 import AboutView from "../Views/AboutView";
+import RegisterView from "../Views/RegisterView/RegisterView";
 
 export type MiddlewareType = typeof AUTH_MIDDLEWARE | typeof UNAUTH_MIDDLEWARE | null
 
@@ -46,7 +47,7 @@ export const credentialRoutes: RouteType[] = [
   {
     key: ROUTE_PATH.register.key,
     path: ROUTE_PATH.register.path,
-    component: LoginView,
+    component: RegisterView,
     middleware: UNAUTH_MIDDLEWARE,
   }
 ]

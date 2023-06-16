@@ -4,7 +4,7 @@ const RegisterView = kind({
   name: 'RegisterView',
   render: (props) => (
     <div {...props}>
-      <h1>View Not Found</h1>
+      <h1>Register View</h1>
     </div>
   )
 })
