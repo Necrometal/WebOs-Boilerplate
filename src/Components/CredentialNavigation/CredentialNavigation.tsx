@@ -1,13 +1,13 @@
 import kind from "@enact/core/kind";
 import { Outlet } from "react-router-dom";
-import { Panel } from "@enact/sandstone/Panels";
+import PanelProvider from "../PanelProvider/PanelProvider";
 
 const CredentialNavigation = kind({
   name: 'CredentialNavigation',
   render: (props) => (
-    <Panel {...props}>
+    <PanelProvider { ...props }>
       <Outlet />
-    </Panel>
+    </PanelProvider>
   )
 })
 

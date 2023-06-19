@@ -1,7 +1,7 @@
 import kind from "@enact/core/kind";
 import { NavLink, Outlet } from "react-router-dom";
 import css from './style.module.less'
-import Panels, { Panel } from "@enact/sandstone/Panels";
+import PanelProvider from "../PanelProvider/PanelProvider";
 
 const Navigation = kind({
   name: 'Navigation',
@@ -10,7 +10,7 @@ const Navigation = kind({
     className: 'main'
   },
   render: (props) => (
-    <Panel {...props}>
+    <PanelProvider {...props}>
       <div>
         <NavLink className='spottable' tabIndex={-1} to="/" >Home</NavLink>
         <NavLink className='spottable' tabIndex={-1} to="/about">About</NavLink>
@@ -18,7 +18,7 @@ const Navigation = kind({
         <NavLink className='spottable' tabIndex={-1} to="/register">Register</NavLink>
       </div>
       <Outlet />
-    </Panel>
+    </PanelProvider>
   )
 })
 

@@ -29,7 +29,7 @@ const Router = createHashRouter(
       </Route>
 
       <Route path={ROUTE_PATH.home.path} element={<CredentialNavigation />}>
-      {
+        {
           credentialRoutes.map(item => {
             const { key, path, middleware, component: Component } = item
 
