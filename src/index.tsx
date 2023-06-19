@@ -3,6 +3,7 @@ import {createRoot, hydrateRoot} from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './Assets/global.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const appElement = (<App />);
 
