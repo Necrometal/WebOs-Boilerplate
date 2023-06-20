@@ -27,6 +27,7 @@ const useKeyDownListener = (
     return () => {
       document.removeEventListener('keydown', handleGLobalKeydown, {capture: true})
     }
+  // eslint-disable-next-line
   }, [])
 }
 
